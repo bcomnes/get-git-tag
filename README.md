@@ -48,24 +48,3 @@ tag:
           docker build . --file Dockerfile --tag docker.pkg.github.com/someimage:$GIT_TAG_NAME
 ```
 
-## FAQ
-
-### Can you offer a major version tag/branch alias?  I want automatic updates!
-
-Nope!  This was always weird/bad pattern of github actions and I don't have time to maintain or automate that.  Luckily github offers a solution for this.  Create a `.github/dependabot.yml` with, at a minimum, the following config:
-
-```yaml
-# Basic dependabot.yml file with
-# minimum configuration for two package managers
-
-version: 2
-updates:
-  # Enable version updates for npm
-  # Enable updates to github actions
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "daily"
-```
-
-Furthermore, this action won't be changing much.
