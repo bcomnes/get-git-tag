@@ -4,7 +4,7 @@ This action gets tag name from commit that triggered the action and puts it into
 
 You can also use optional parameters `tagRegex` and `tagRegexGroup` to extract a part from tag string.
 
-<a href="https://github.com/little-core-labs/get-git-tag"><img alt="GitHub Actions status" src="https://github.com/little-core-labs/get-git-tag/workflows/Tests/badge.svg"></a>
+<a href="https://github.com/bcomnes/get-git-tag"><img alt="GitHub Actions status" src="https://github.com/bcomnes/get-git-tag/workflows/Tests/badge.svg"></a>
 
 Forked from [olegtarasov/get-tag](https://github.com/olegtarasov/get-tag) for maintenance.
 
@@ -35,7 +35,7 @@ tag:
 
 ```yaml
     steps:
-      - uses: little-core-labs/get-git-tag@v3.0.1
+      - uses: bcomnes/get-git-tag@v3.0.1
         id: tagName
         with:
           tagRegex: "foobar-(.*)"  # Optional. Returns specified group text as tag name. Full tag string is returned if regex is not defined.
