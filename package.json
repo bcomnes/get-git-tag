@@ -23,7 +23,7 @@
   "devDependencies": {
     "esbuild": "^0.28.0",
     "auto-changelog": "^2.2.0",
-    "gh-release": "^7.0.2",
+    "gh-release": "^8.0.0",
     "standard": "^17.0.0"
   },
   "standard": {
